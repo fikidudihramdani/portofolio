@@ -6,27 +6,20 @@
 }
 
 body{
-    color: #fff; /* Warna teks putih agar terlihat jelas */
+    color: #000000; /* Warna teks putih agar terlihat jelas */
 }
 
-.container{
-    background: linear-gradient(to bottom, #8e44ad, #c39bd3, #fff);
-    padding-top:40px ;
-    padding-bottom: 80px;
-    margin-bottom: 10px;
-    transition: margin-left 0.5s;
-}
-
-.container header{
+header{
     display: flex;
-
+    justify-content: center;
 }
 
-.container nav{
+nav{
     display: flex;
     justify-content: center;
     width:100%;
     align-items: center;
+    padding-top: 40px;
 }
 
 nav ul{
@@ -48,7 +41,8 @@ ul li a{
     padding-right:10px ;
     padding-bottom: 5px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+
 }
 
 a:hover{
@@ -56,7 +50,7 @@ a:hover{
     border-bottom: 3px solid rgb(0, 0, 118);
 }
 
-aside .pengenalan p{
+article .pengenalan p{
     text-align: center;
 }
 
@@ -72,7 +66,7 @@ aside .pengenalan p{
     margin: auto;
 }
 
-article .foto{
+aside .foto{
     padding-bottom: 30px;
     
 }
@@ -128,14 +122,16 @@ nav li {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
-    margin: 4px 0;
+    background-color: #000000;
+    margin: 4px;
     transition: 0.4s;
+    
 }
 
 /* Tampilkan tombol burger hanya pada ukuran layar kecil */
@@ -147,7 +143,10 @@ nav li {
     .burger-icon {
         display: flex;
         padding-inline-start: 20px;
+        color: #000000;
     }
+
+    
 
     nav ul {
         display: none;
@@ -175,6 +174,7 @@ nav li {
     ul li a:hover{
         border-bottom: none;
     }
+
 }
 
 
@@ -192,6 +192,7 @@ h3{
     background-color: white;
     padding-inline-start: 140px;
     padding-inline-end: 140px;
+    padding-top: 60px;
 }
 
 #about .isi{
@@ -230,9 +231,9 @@ h3{
     }
   
     .text {
-      padding-inline-start: 34px;
+      padding-inline-start: 30px;
       text-align: left;
-      width: 393px;
+      width: 377px;
       padding-inline-end: 10px;
     }
 
@@ -249,7 +250,30 @@ h3{
     .pict {
       margin-top: 20px; /* Jarak antara teks dan gambar */
     }
+
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
   }
   
+ul{
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: space-between;
+    justify-content: center;
+    padding-top: 60px;
+    align-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-inline-start: 140px;
+    padding-inline-end: 140px;
+}
 
 
